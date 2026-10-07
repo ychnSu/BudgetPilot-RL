@@ -1,0 +1,1 @@
+{"instance_id":"budgetpilot-toy-001","repo":"budgetpilot/toy","base_commit":"toy-image-base","problem_statement":"The divide function returns 1 for divide(3, 2), but the API contract requires true division with result 1.5. Locate and fix the implementation, and run existing tests."}

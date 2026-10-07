@@ -1,0 +1,15 @@
+model: Qwen/Qwen3-8B
+budget:
+  tokens: 16000
+  tool_calls: 20
+  wall_seconds: 600
+  max_turns: 24
+  max_completion_tokens: 2048
+tools:
+  timeout_seconds: 60
+  max_output_chars: 12000
+reward:
+  token_weight: 0.15
+  tool_weight: 0.10
+  time_weight: 0.05
+  repeat_weight: 0.05

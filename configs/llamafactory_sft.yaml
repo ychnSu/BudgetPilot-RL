@@ -1,0 +1,25 @@
+### Reference config; requires separately installed compatible LLaMA-Factory.
+model_name_or_path: Qwen/Qwen3-8B
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 16
+lora_alpha: 32
+dataset_dir: data/processed
+dataset: budgetpilot_sft
+template: qwen3
+cutoff_len: 8192
+train_on_prompt: false
+output_dir: checkpoints/sft
+overwrite_output_dir: false
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 0.0001
+num_train_epochs: 2
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+logging_steps: 10
+save_steps: 100
+bf16: true
+report_to: none
